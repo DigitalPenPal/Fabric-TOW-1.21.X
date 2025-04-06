@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tow",
+	"version": "${version}",
+	"name": "tow",
+	"description": "The Toys of War are ready to play!",
+	"authors": [
+		"Pencil!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tow/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pencil.tow.Tow"
+		],
+		"fabric-datagen": [
+			"net.pencil.tow.TowDataGenerator"
+		],
+		"client": [
+			"net.pencil.tow.towMoClient"
+		]
+	},
+	"mixins": [
+		"tow.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
